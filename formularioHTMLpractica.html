@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>Formulario en html
+
+    </header>
+    <main>
+        <form>
+            <!-- si se pulsa form y tab sale action es para que uno complete hacia donde te va a redireccionar,
+                 se puede borrar... -->
+                 <!-- lo principal es pensar de que va ser el formulario o para que se quiere utilizar -->
+            <p>
+                <!-- parrafos dentro del formulario -->
+                <label>Nombre</label> <br>
+                <input type="text" name="Nombre" placeholder="Ingresar su nombre" required>
+                <!-- muestra de ej. por ejemplo que desaparece al completarse por el usuario -->
+            </p>
+
+            <p>
+                <label>Apellido</label> <br>
+                <input type="text" name="Apellido" placeholder="Ingrese su apellido" required>
+            </p>
+            <p>
+                <label>Email</label> <br>
+                <input type="email" name="Email" placeholder="example@example.com" required>
+                <!-- esto hará que si no tiene las caracteristicas de un email no pueda ser valido al ingresarlo -->
+            </p>
+            <p>
+                <!-- para ingresar opciones no hace falta label, sino direcamente radio -->
+                <!-- radio solo permite marcar un elemento -->
+                <input type="radio" name="profesión">Fullstack
+                <input type="radio" name="profesión">Frontend
+                <input type="radio" name="profesión">Backend
+            </p>
+            <p>
+                <label for="País"></label><br>
+                <select name="País" id="">
+                    <!-- selector que tiene un nombre y tiene un ID -->
+                    <!-- cada opcion es un valor dentro de nuetra posibilidad desplegable -->
+                    <option value="Argentina">Argentina</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Paraguay">Paraguay</option>
+                </select>
+            </p>
+            <p>
+                <Label>Estudios</Label><br>
+                <input type="checkbox" value="Primario">Primario <br>
+                <input type="checkbox" value="Secundario">Secundario <br>
+                <input type="checkbox" value="Terciario">Terciario <br>
+                <input type="checkbox" value="Universitario">Universitario <br>
+                <input type="checkbox" value="Otro">Otro
+            </p>
+            <p>
+                <Label>Observaciones</Label><br>
+                <textarea name="obs" id="" cols="30" rows="10" maxlength="140" placeholder="Datos relevantes sobre usted"></textarea>
+                <!-- lo que muestra aqui es el ancho y el alto del cuadro -->
+                <!-- mide en: cols serían las filas y rows columnas -->
+            </p>
+            <p>
+                <input type="checkbox" name="Term" value="si" id="" required>Acepto los terminos y condiciones
+
+            </p>
+            <button>Enviar</button>
+            <button type="reset">Limpiar</button>
+            <!-- por defecto html lo reconoce a button como boton para enviar datos y refresca la pantalla al presionarlo -->
+
+        </form>
+
+    </main>
+</body>
+</html>
